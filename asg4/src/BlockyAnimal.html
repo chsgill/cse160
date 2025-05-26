@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Change a point color</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <pre>
+Welcome to the SERENE LAKE, enjoy your meditation!
+WASD to astral project
+SPACE to acend
+V to decend
+<button type="button" id="resetButton">Toggle Boundaries</button> <- press this button to astral project beyond the lake
+please, do not destroy the garden!!
+<button type="button" id="animationButton">Toggle Animation</button> SHIFT+CLICK to stick tongue out!
+<button type="button" id="normalButton">Toggle Normals</button> <button type="button" id="lightButton">Toggle Light</button> <button type="button" id="lightAniButton">Toggle Light Animation</button>
+Light X <input type="range" min="-250" max="250" value="0" class="slider" id="xlightSlide">
+Light Y <input type="range" min="-250" max="250" value="100" class="slider" id="ylightSlide">
+Light Z <input type="range" min="-250" max="250" value="-200" class="slider" id="zlightSlide">
+Light R <input type="range" min="0.0" max="1.0" value="1.0" step="0.01" class="slider" id="rlightSlide">
+Light G <input type="range" min="0.0" max="1.0" value="1.0" step="0.01" class="slider" id="glightSlide">
+Light B <input type="range" min="0.0" max="1.0" value="1.0" step="0.01" class="slider" id="blightSlide">
+
+Move X Axis<input type="range" min="0" max="360" value="0" class="slider" id="xangleSlide">
+Move Y Axis<input type="range" min="0" max="360" value="0" class="slider" id="yangleSlide">
+
+Move Arms  <input type="range" min="-45" max="45" value="0" class="slider" id="armSlide">
+Move Hands <input type="range" min="-30" max="30" value="0" class="slider" id="handSlide">
+    </pre>
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix-cse160.js"></script>
+    <script src="../lib/OBJLoader.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Sphere.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Camera.js"></script>
+    <script src="Model.js"></script>
+    <script src="BlockyAnimal.js"></script>   
+  </body>
+</html>
