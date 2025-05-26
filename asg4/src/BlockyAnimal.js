@@ -644,7 +644,7 @@ function renderAllShapes() {
 
   var righteye = new Cube();
   righteye.color = [g_yellowAngle,0.0,0.0,1.0];
-  lefteye.textureNum = -4;
+  righteye.textureNum = -4;
   //if (g_NormalOn) righteye.textureNum = -3;
   righteye.matrix = lefteye.matrix;
   righteye.matrix.translate(3.8, 0, 0);
